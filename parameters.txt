@@ -1,0 +1,6 @@
+choose_path:T;
+line_length:45;
+max_prev_symbols:10;
+step_table:15;
+size_of_part:50;
+count_of_words:100;

@@ -1,0 +1,19 @@
+The TypeSpeedTest class contains the main functionality of the script. It initializes some variables to keep track of the progress of the test,
+such as the text to be typed (self.text), the length of each line (self.line_length),
+and the position of the cursor in the text (self.now_pos). The keyboard_controller method handles the Esc key to pause or exit the test,
+and the print_text_line method prints the text to be typed and highlights the current character being typed.
+The type_text method is called every time a key is pressed and updates the progress of the test based on whether
+the typed character matches the current character in the text.
+
+The calculate_speed method calculates the typing speed in characters per minute (CPM) and words per minute
+(WPM) based on the number of symbols entered (self.symbols_entered) and the time elapsed (self.timer).
+The calculate_accuracy method calculates the typing accuracy based on the number of errors made (self.errors_count)
+and the number of symbols entered.
+
+The print_statistics method prints the current typing speed, accuracy, number of characters entered, and elapsed time.
+The script runs in a loop until the user types all the characters in the text. In each iteration of the loop,
+the print_text_line method is called to print the text, the calculate_accuracy and print_statistics methods are called
+to update and display the statistics, and the type_text method is called to handle the user's input.
+
+Finally, the plot_table method is called to display a table of the typing speed, accuracy,
+and time elapsed at regular intervals (self.step_table).
